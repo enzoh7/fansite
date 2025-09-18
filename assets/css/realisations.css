@@ -1,0 +1,188 @@
+/* ==========================================
+   PAGE RÉALISATIONS - STYLES SPÉCIFIQUES
+   ========================================== */
+
+/* Album hero section */
+.album-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.album-title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.album-meta {
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.album-description {
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.album-cover {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-center {
+    align-items: center;
+}
+
+.btn-mr {
+    margin-right: 1rem;
+}
+
+/* Track/single card styling */
+.track-meta {
+    color: #aaa;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.track-actions {
+    margin-top: 1rem;
+}
+
+/* Statistiques */
+.stat-card-1 {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.stat-card-2 {
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.stat-card-3 {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.stat-card-4 {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.stat-number {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Boutons compacts pour les tableaux */
+.btn-compact {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    min-width: auto;
+}
+
+/* Cartes de singles */
+.single-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.single-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(227, 193, 255, 0.2);
+}
+
+.single-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Badges de streaming */
+.streaming-badges {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.streaming-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.streaming-badge:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.streaming-badge.spotify { background: #1DB954; }
+.streaming-badge.youtube { background: #FF0000; }
+.streaming-badge.deezer { background: #FF9300; }
+.streaming-badge.apple { background: #FA243C; }
+
+/* Responsive réalisations */
+@media (max-width: 768px) {
+    .album-hero {
+        padding: 2rem;
+    }
+    
+    .album-title {
+        font-size: 2rem;
+    }
+    
+    .streaming-badges {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-hero {
+        padding: 1.5rem;
+    }
+    
+    .album-title {
+        font-size: 1.8rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
