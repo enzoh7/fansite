@@ -1,8 +1,5 @@
-/* ==========================================
-   PAGE D'ACCUEIL - STYLES SPÉCIFIQUES
-   ========================================== */
 
-/* Arrière-plan avec logo 667 */
+
 body {
     background-image: url('../img/667logo.webp');
     background-size: cover;
@@ -12,9 +9,7 @@ body {
     background-blend-mode: overlay;
 }
 
-/* Overlay pour améliorer la lisibilité */
 body::before {
-    content: '';
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +28,6 @@ body::before {
 } 
 
 .hero-home::before {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -59,20 +53,6 @@ body::before {
     transform: translateY(-8px);
 }
 
-/* Audio player personnalisé */
-.custom-audio {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem 0;
-}
-
-.custom-audio audio {
-    width: 100%;
-    background: transparent;
-}
-
-/* Réseaux sociaux */
 .social-links {
     display: flex;
     justify-content: center;
@@ -126,15 +106,12 @@ body::before {
     color: var(--primary-color);
 }
 
-/* Description sociale */
 .social-description {
     text-align: center;
     color: #ccc;
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
-
-/* Responsive spécifique à l'accueil */
 @media (max-width: 768px) {
     .hero-home {
         padding: 4rem 0;

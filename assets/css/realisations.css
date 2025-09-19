@@ -48,7 +48,6 @@
     margin-right: 1rem;
 }
 
-/* Track/single card styling */
 .track-meta {
     color: #aaa;
     margin-bottom: 1rem;
@@ -59,7 +58,7 @@
     margin-top: 1rem;
 }
 
-/* Statistiques */
+
 .stat-card-1 {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: white;

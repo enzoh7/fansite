@@ -7,204 +7,7 @@
     <meta name="keywords" content="Freeze Corleone, ADC, Attaque des Clones, tracklist, 667, rap français">
     <title>ADC (Attaque des Clones) - Tracklist | Freeze Corleone</title>
     <link rel="stylesheet" href="assets/css/base.css">
-    <style>
-        body {
-            font-size: 16px;
-            color: #fff;
-            background: var(--dark-bg);
-        }
-
-        .product-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            margin-top: -10px;
-        }
-
-        .product-header {
-            text-align: center;
-            margin-top: -10px;
-        }
-
-        .product-header h1 {
-            margin-bottom: 20px;
-            color: var(--primary-color);
-            font-size: 2.5rem;
-        }
-
-        .product-header + .product-cover-section {
-            margin-top: 5px;
-        }
-
-        .product-cover-section {
-            text-align: center;
-            margin: 0 0 10px 0;
-        }
-
-        .product-cover-image {
-            width: 100%;
-            max-width: 350px;
-            min-width: 250px;
-            border-radius: 8px;
-            box-shadow: 5px 5px 15px rgba(227, 193, 255, 0.3);
-            transition: transform 0.3s ease;
-            object-fit: cover;
-        }
-
-        .product-cover-image:hover {
-            transform: scale(1.02);
-            box-shadow: 10px 10px 20px rgba(227, 193, 255, 0.5);
-        }
-
-        .product-type {
-            background-color: var(--primary-color);
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 14px;
-            color: white;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        .tracklist-section {
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 28px;
-            border-radius: 8px;
-            line-height: 1.8;
-            border: 1px solid rgba(227, 193, 255, 0.2);
-        }
-
-        .tracklist-section h2 {
-            margin-top: 0;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-            text-align: center;
-            font-size: 1.8rem;
-        }
-
-        .tracklist-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .tracklist-table th {
-            background: var(--primary-color);
-            color: white;
-            padding: 12px;
-            text-align: left;
-            font-weight: bold;
-        }
-
-        .tracklist-table td {
-            padding: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            color: #ccc;
-        }
-
-        .tracklist-table tr:hover {
-            background: rgba(227, 193, 255, 0.1);
-        }
-
-        .track-number {
-            font-weight: bold;
-            color: var(--primary-color);
-            text-align: center;
-            width: 50px;
-        }
-
-        .track-title {
-            font-weight: bold;
-            color: white;
-        }
-
-        .album-info {
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(227, 193, 255, 0.2);
-        }
-
-        .album-info h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .album-info p {
-            margin: 8px 0;
-            font-size: 16px;
-            color: #ccc;
-        }
-
-        .back-btn {
-            background: var(--primary-color);
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .back-btn:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-            .tracklist-table {
-                font-size: 14px;
-            }
-            
-            .tracklist-table th,
-            .tracklist-table td {
-                padding: 8px 4px;
-            }
-
-            .product-cover-image {
-                max-width: 320px;
-                min-width: 0;
-            }
-        }
-
-        @media (min-width: 800px) {
-            .product-container {
-                max-width: 1200px;
-            }
-            
-            .product-cover-section {
-                float: left;
-                width: 40%;
-                margin-right: 30px;
-                margin-bottom: 0;
-            }
-            
-            .product-cover-image {
-                max-width: 100%;
-                min-width: 300px;
-                width: 100%;
-            }
-            
-            .tracklist-section,
-            .album-info {
-                margin-left: 0;
-            }
-
-            .content-right {
-                overflow: hidden;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/tracklist.css">
     <link rel="icon" href="data:image/svg+xml,svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
 </head>
 <body>
@@ -238,113 +41,118 @@
             </div>
 
             <div class="product-cover-section">
-                <img src="./assets/img/adc_album_cover.jpg" alt="Couverture ADC - Attaque des Clones" class="product-cover-image">
+                <img src="./assets/img/adc_album_cover.jpg" alt="Couverture ADC - Attaque des Clones" class="product-cover-image" width="900" height="504">
             </div>
 
             <div class="content-right">
                 <div class="album-info">
-                    <h3>📀 Informations de l'Album</h3>
+                    <h3>📀 Informations</h3>
                     <p><strong>Artiste :</strong> Freeze Corleone</p>
                     <p><strong>Date de sortie :</strong> 11 septembre 2023</p>
                     <p><strong>Label :</strong> 667</p>
                     <p><strong>Genre :</strong> Rap français, Drill</p>
                     <p><strong>Nombre de titres :</strong> 13</p>
                     <p><strong>Durée totale :</strong> 46 minutes</p>
+                    <p><strong>Présentation :</strong>ADC (pour L’Attaque des Clones) est le troisième album solo de Freeze Corleone, mélange dense de références pop culture, complots, géopolitique, violence urbaine et autodérision.
+                        L’album ne comporte aucun featuring, mise sur son écriture méticuleuse, son flow toujours aussi tranchant et des productions sombres, parfois très lourdes, qui renforcent l’atmosphère oppressante et incisive.<br>
+                        Commercialement, il confirme la montée en puissance de Freeze : un très bon démarrage, certifications or puis platine, et une réception qui souligne autant la constance technique que les débats provoqués autour des paroles.</p> 
+                    </p>
                 </div>
+            </div>
 
-                <div class="tracklist-section">
-                    <h2>🎵 Tracklist Complète</h2>
-                    <table class="tracklist-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Titre</th>
-                                <th>Durée</th>
-                                <th>Producteurs</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="track-number">1</td>
-                                <td class="track-title">MW2</td>
-                                <td>4:47</td>
-                                <td>Flem, Rayane Beats, Chvpo</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">2</td>
-                                <td class="track-title">Isshin Ashina</td>
-                                <td>4:53</td>
-                                <td>Flem</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">3</td>
-                                <td class="track-title">Shavkat</td>
-                                <td>3:40</td>
-                                <td>Flem, Therapy</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">4</td>
-                                <td class="track-title">Amérique du Sud</td>
-                                <td>3:31</td>
-                                <td>Flem, Rayane Beats, Shk</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">5</td>
-                                <td class="track-title">Ancelotti</td>
-                                <td>3:41</td>
-                                <td>Rayane Beats</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">6</td>
-                                <td class="track-title">Tse Chi Lop</td>
-                                <td>3:18</td>
-                                <td>Flem</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">7</td>
-                                <td class="track-title">Kpop</td>
-                                <td>3:01</td>
-                                <td>Flem, Narcos, Skuna Boi, Ken&Ryu</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">8</td>
-                                <td class="track-title">L'homme méthode</td>
-                                <td>3:10</td>
-                                <td>Flem, Ocho</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">9</td>
-                                <td class="track-title">Bill Clinton</td>
-                                <td>3:29</td>
-                                <td>Flem, Rayane Beats, Gouap RTT Clan</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">10</td>
-                                <td class="track-title">Voldemort</td>
-                                <td>3:48</td>
-                                <td>Flem, Rayane Beats, Shk</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">11</td>
-                                <td class="track-title">Argent noir part. 3</td>
-                                <td>2:57</td>
-                                <td>Flem</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">12</td>
-                                <td class="track-title">Jour de plus</td>
-                                <td>3:29</td>
-                                <td>Hoodstarbeatz, Nassir-Kélian</td>
-                            </tr>
-                            <tr>
-                                <td class="track-number">13</td>
-                                <td class="track-title">Lamborghini bénie</td>
-                                <td>3:53</td>
-                                <td>Flem, Rayane Beats, Nassir-Kélian, Elias, Shk</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+            <div class="tracklist-section">
+                <h2>🎵 Tracklist Complète</h2>
+                <table class="tracklist-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Titre</th>
+                            <th>Durée</th>
+                            <th>Producteurs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="track-number">1</td>
+                            <td class="track-title">MW2</td>
+                            <td>4:47</td>
+                            <td>Flem, Rayane Beats, Chvpo</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">2</td>
+                            <td class="track-title">Isshin Ashina</td>
+                            <td>4:53</td>
+                            <td>Flem</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">3</td>
+                            <td class="track-title">Shavkat</td>
+                            <td>3:40</td>
+                            <td>Flem, Therapy</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">4</td>
+                            <td class="track-title">Amérique du Sud</td>
+                            <td>3:31</td>
+                            <td>Flem, Rayane Beats, Shk</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">5</td>
+                            <td class="track-title">Ancelotti</td>
+                            <td>3:41</td>
+                            <td>Rayane Beats</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">6</td>
+                            <td class="track-title">Tse Chi Lop</td>
+                            <td>3:18</td>
+                            <td>Flem</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">7</td>
+                            <td class="track-title">Kpop</td>
+                            <td>3:01</td>
+                            <td>Flem, Narcos, Skuna Boi, Ken&Ryu</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">8</td>
+                            <td class="track-title">L'homme méthode</td>
+                            <td>3:10</td>
+                            <td>Flem, Ocho</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">9</td>
+                            <td class="track-title">Bill Clinton</td>
+                            <td>3:29</td>
+                            <td>Flem, Rayane Beats, Gouap RTT Clan</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">10</td>
+                            <td class="track-title">Voldemort</td>
+                            <td>3:48</td>
+                            <td>Flem, Rayane Beats, Shk</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">11</td>
+                            <td class="track-title">Argent noir part. 3</td>
+                            <td>2:57</td>
+                            <td>Flem</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">12</td>
+                            <td class="track-title">Jour de plus</td>
+                            <td>3:29</td>
+                            <td>Hoodstarbeatz, Nassir-Kélian</td>
+                        </tr>
+                        <tr>
+                            <td class="track-number">13</td>
+                            <td class="track-title">Lamborghini bénie</td>
+                            <td>3:53</td>
+                            <td>Flem, Rayane Beats, Nassir-Kélian, Elias, Shk</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div style="clear: both;">

@@ -1,0 +1,230 @@
+body {
+            font-size: 16px;
+            color: #fff;
+            background: var(--dark-bg);
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: -10px;
+        }
+
+        .product-header {
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .product-header h1 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+        }
+        .product-cover-section {
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        .product-cover-image {
+            width: 100%;
+            max-width: 450px;
+            min-width: 150px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px rgba(227, 193, 255, 0.3);
+            transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+
+        .product-cover-image:hover {
+            transform: scale(1.02);
+            box-shadow: 10px 10px 20px rgba(227, 193, 255, 0.5);
+        }
+
+        .product-type {
+            background-color: var(--secondary-color);
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            color: white;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .tracklist-section {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 28px;
+            border-radius: 8px;
+            line-height: 1.8;
+            border: 1px solid rgba(227, 193, 255, 0.2);
+        }
+
+        .tracklist-section h2 {
+            margin-top: 0;
+            color: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .tracklist-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tracklist-table th {
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .tracklist-table td {
+            font-size: 2vh;
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ccc;
+        }
+
+        .tracklist-table tr:hover {
+            background: rgba(227, 193, 255, 0.1);
+        }
+
+        .track-number {
+            font-weight: bold;
+            color: var(--primary-color);
+            text-align: center;
+            width: 50px;
+        }
+
+        .track-title {
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Alignement à droite pour Durée et Producteurs */
+        .tracklist-table th:nth-child(3),
+        .tracklist-table th:nth-child(4),
+        .tracklist-table td:nth-child(3),
+        .tracklist-table td:nth-child(4) {
+            text-align: right;
+        }
+
+        /* Largeurs spécifiques des colonnes */
+        .tracklist-table th:nth-child(1),
+        .tracklist-table td:nth-child(1) {
+            width: 50px; /* # */
+        }
+
+        .tracklist-table th:nth-child(2),
+        .tracklist-table td:nth-child(2) {
+            width: auto; /* Titre - prend l'espace restant */
+        }
+
+        .tracklist-table th:nth-child(3),
+        .tracklist-table td:nth-child(3) {
+            width: 80px; /* Durée - largeur réduite */
+            padding-right: 20px; /* Espacement de 20px vers la colonne Producteurs */
+        }
+
+        .tracklist-table th:nth-child(4),
+        .tracklist-table td:nth-child(4) {
+            width: 300px; /* Producteurs - largeur fixe */
+            padding-left: 0; /* Pas d'espacement supplémentaire à gauche */
+        }
+
+        .album-info {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(227, 193, 255, 0.2);
+        }
+
+        .album-info h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .album-info p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        .back-btn {
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .tracklist-table {
+                font-size: 14px;
+            }
+            
+            .tracklist-table th,
+            .tracklist-table td {
+                padding: 8px 4px;
+            }
+
+            .product-cover-image {
+                max-width: 320px;
+                min-width: 0;
+            }
+        }
+
+        @media (min-width: 800px) {
+            .product-container {
+                max-width: 1200px;
+            }
+            
+            .product-cover-section {
+                float: left;
+                width: 40%;
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+            
+            .product-cover-image {
+                max-width: 100%;
+                min-width: 300px;
+                width: 100%;
+            }
+            
+            .album-info {
+                margin-left: 0;
+            }
+
+            .content-right {
+                overflow: hidden;
+            }
+            
+            /* Tracklist en pleine largeur sous les deux autres divs */
+            .tracklist-section {
+                clear: both;
+                width: 100%;
+                margin-top: 30px;
+                margin-left: 0;
+            }
+        }

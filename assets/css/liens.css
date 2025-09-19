@@ -1,3 +1,11 @@
+body {
+    background-image: url('../img/667logo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
 .links-hero {
     text-align: center;
     margin-bottom: 3rem;
@@ -16,7 +24,6 @@
     margin: 0 auto;
 }
 
-/* Catégories de liens */
 .links-categories {
     display: flex;
     justify-content: center;
