@@ -6,6 +6,51 @@ body {
     background-attachment: fixed;
     background-blend-mode: overlay;
 }
+/* Style uniforme pour toutes les cartes */
+.link-card,
+.platform-card,
+.social-card,
+.community-card,
+.shop-card,
+.social-card-instagram,
+.social-card-youtube,
+.social-card-spotify,
+.social-card-twitter,
+.social-card-facebook,
+.social-card-soundcloud,
+.social-card-apple-music,
+.social-card-deezer,
+.social-card-youtube-music,
+.social-card-bandcamp {
+    background: rgba(80, 79, 79, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.link-card:hover,
+.platform-card:hover,
+.social-card:hover,
+.community-card:hover,
+.shop-card:hover,
+.social-card-instagram:hover,
+.social-card-youtube:hover,
+.social-card-spotify:hover,
+.social-card-twitter:hover,
+.social-card-facebook:hover,
+.social-card-soundcloud:hover,
+.social-card-apple-music:hover,
+.social-card-deezer:hover,
+.social-card-youtube-music:hover,
+.social-card-bandcamp:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(227, 193, 255, 0.2);
+}
 .links-hero {
     text-align: center;
     margin-bottom: 3rem;
@@ -485,34 +530,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.social-card-instagram {
-    background: linear-gradient(45deg, #E4405F, #C13584);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
-.social-card-youtube {
-    background: linear-gradient(45deg, #FF0000, #CC0000);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
-.social-card-spotify {
-    background: linear-gradient(45deg, #1DB954, #1ed760);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
-.social-card-twitter {
-    background: linear-gradient(45deg, #1DA1F2, #0d8bd9);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
 .social-card-header {
     display: flex;
     align-items: center;
@@ -584,56 +601,8 @@ body {
 }
 
 /* Cartes réseaux sociaux spécifiques */
-.social-card-facebook {
-    background: linear-gradient(45deg, #4267B2, #365899);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
-.social-card-twitter {
-    background: linear-gradient(45deg, #1DA1F2, #0d8bd9);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-}
 
 /* Styles pour plateformes musicales */
-.social-card-spotify {
-    background: linear-gradient(45deg, #1DB954, #1ed760);
-    text-align: center;
-    color: white;
-}
-
-.social-card-soundcloud {
-    background: linear-gradient(45deg, #FF5500, #FF7700);
-    text-align: center;
-    color: white;
-}
-
-.social-card-apple-music {
-    background: linear-gradient(45deg, #FA233B, #FF4B55);
-    text-align: center;
-    color: white;
-}
-
-.social-card-deezer {
-    background: linear-gradient(45deg, #FF6600, #FF8833);
-    text-align: center;
-    color: white;
-}
-
-.social-card-youtube-music {
-    background: linear-gradient(45deg, #FF1744, #FF5722);
-    text-align: center;
-    color: white;
-}
-
-.social-card-bandcamp {
-    background: linear-gradient(45deg, #000000, #333333);
-    text-align: center;
-    color: white;
-}
 
 .music-platform-icon {
     font-size: 4rem;
@@ -672,10 +641,6 @@ body {
 
 /* Cartes plateformes de streaming */
 .platform-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 2rem;
     text-align: center;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -687,18 +652,6 @@ body {
     transform: translateY(-5px);
     border-color: var(--primary-color);
     box-shadow: 0 10px 30px rgba(227, 193, 255, 0.2);
-}
-
-.platform-card.spotify {
-    background: linear-gradient(45deg, #1DB954, #1ed760);
-}
-
-.platform-card.apple-music {
-    background: linear-gradient(45deg, #FA233B, #FF4B55);
-}
-
-.platform-card.deezer {
-    background: linear-gradient(45deg, #FF6600, #FF8833);
 }
 
 .platform-icon {
@@ -728,10 +681,6 @@ body {
 
 /* Cartes réseaux sociaux améliorées */
 .social-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 1.5rem;
     transition: all 0.3s ease;
     text-decoration: none;
     color: inherit;
@@ -742,22 +691,6 @@ body {
     transform: translateY(-5px);
     border-color: var(--primary-color);
     box-shadow: 0 10px 30px rgba(227, 193, 255, 0.2);
-}
-
-.social-card.instagram {
-    background: linear-gradient(45deg, #405DE6, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-}
-
-.social-card.youtube {
-    background: linear-gradient(45deg, #FF0000, #CC0000);
-}
-
-.social-card.twitter {
-    background: linear-gradient(45deg, #1DA1F2, #0d8bd9);
-}
-
-.social-card.tiktok {
-    background: linear-gradient(45deg, #000000, #FF0050, #00F2EA);
 }
 
 .social-header {
@@ -805,10 +738,6 @@ body {
 
 /* Cartes communauté */
 .community-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 2rem;
     text-align: center;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -823,10 +752,6 @@ body {
 }
 
 .shop-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 2rem;
     text-align: center;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -886,54 +811,6 @@ body {
     background: var(--primary-color);
     color: white;
     transform: translateY(-2px);
-}
-
-/* Cartes boutique */
-.shop-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.shop-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(227, 193, 255, 0.2);
-}
-
-.shop-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.shop-card h3 {
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.shop-card p {
-    color: #ccc;
-    margin-bottom: 1.5rem;
-}
-
-.shop-features {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.shop-features span {
-    color: #aaa;
-    font-size: 0.9rem;
 }
 
 /* Responsive design */

@@ -1,3 +1,26 @@
+@media (max-width: 768px) {
+    nav ul {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 0.5rem;
+        background: #181818;
+        padding: 0.5rem 0.2rem;
+        margin: 0;
+        width: 100vw;
+        justify-content: flex-start;
+    }
+    nav ul li {
+        flex: 0 0 auto;
+        margin: 0 0.2rem;
+    }
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+        display: inline-block;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -148,9 +171,11 @@ footer {
 
 h2 {
     margin-bottom: 20px;
+    padding: 1rem 0;
     text-align: center;
     font-size: larger;
-    font-size: 32px;
+    font-size: 2rem;
+    color:#5e4175;
 }
 
 .grid {
@@ -163,7 +188,7 @@ h2 {
 .grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
 .card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(103, 103, 103, 0.488);
     border-radius: 15px;
     padding: 2rem;
     backdrop-filter: blur(10px);
@@ -171,6 +196,7 @@ h2 {
     transition: all 0.3s ease;
     color: var(--text-light);
     margin-bottom: 50px;
+    font-size: 1.2rem;
 }
 
 .card:hover {
@@ -182,6 +208,7 @@ h2 {
 .btn {
     display: inline-block;
     padding: 12px 24px;
+    margin-top:20px;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: white;
     text-decoration: none;
@@ -219,7 +246,7 @@ h2 {
 
 .hero {
     text-align: center;
-    padding: 4rem 0;
+    padding: 3rem 0;
     color: var(--text-light);
 }
 
