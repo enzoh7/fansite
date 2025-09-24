@@ -1,3 +1,10 @@
+/* Affichage conditionnel desktop/mobile pour la carte album-hero */
+.album-mobile { display: none; }
+.album-desktop { display: block; }
+@media (max-width: 768px) {
+    .album-mobile { display: block !important; }
+    .album-desktop { display: none !important; }
+}
 /* ==========================================
    PAGE RÉALISATIONS - STYLES SPÉCIFIQUES
    ========================================== */
@@ -27,7 +34,6 @@
 
 .album-description {
     color: white;
-    margin-bottom: 2rem;
     line-height: 1.8;
     font-size: 1.3rem;
 }
@@ -60,7 +66,7 @@
 
 
 .stat-card-1 {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
     color: white;
     text-align: center;
     border-radius: 10px;

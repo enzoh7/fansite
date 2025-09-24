@@ -59,9 +59,7 @@
   from { opacity: 0; transform: scale(0.8) translate(-50%, -50%); }
   to   { opacity: 1; transform: scale(1)   translate(-50%, -50%); }
 }
-.fade-in-up {
-    padding:2rem;
-}
+
 .subtitle{
     text-align: center;
 
