@@ -1,0 +1,265 @@
+body {
+  background-image: url('../img/667logo.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  pointer-events: none;
+}
+/* Disposition 2 colonnes pour histoire/timeline */
+.history-timeline-flex {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.section-history {
+  flex: 0 1 70%;
+  min-width: 0;
+}
+.section-timeline {
+  flex: 0 1 30%;
+  min-width: 220px;
+}
+@media (max-width: 1000px) {
+  .history-timeline-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .section-history, .section-timeline {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+/* Section collaborations (style inspiré de realisations) */
+.collab {
+  margin: 2.5rem 0;
+}
+.collab h2 , #members {
+  color: #e3c1ff;
+  margin-bottom: 1.5rem;
+}
+.collab .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.collab .card {
+  background: #232323af;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1.2rem 0.7rem 1.7rem 0.7rem;
+  color: #e3c1ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.section-history h3, .section-timeline h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.collab .card:hover {
+  box-shadow: 0 10px 25px rgba(227, 193, 255, 0.2);
+  transform: translateY(-5px);
+}
+.collab .media-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #181818;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collab .media-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+.collab h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.collab .track-meta {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+.collab .mb-1 {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+.collab .btn {
+  background: var(--primary-color, #e3c1ff);
+  color: #181818;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+.collab .btn:hover {
+  background: var(--secondary-color, #764ba2);
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .collab .grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.member-card {
+  background: #232323d7;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1.2rem 0.7rem 1.7rem 0.7rem;
+  text-align: center;
+  color: #e3c1ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.member-card strong {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  color: #e3c1ff;
+}
+.member-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  margin-bottom: 0.7rem;
+  background: #181818;
+}
+.member-card span {
+  color: #ccc;
+  font-size: 1rem;
+}
+@media (max-width: 900px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .member-photo {
+    width: 90px;
+    height: 90px;
+  }
+}
+body {
+  background: image(url('../img/667logo.png'));
+  color: #f3f3f3;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.ldo {
+  width: 66vw;
+  height: 77vh;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  display: block;
+  margin: 1rem auto 2rem auto;
+
+}
+p{
+  font-size: 1.2rem;
+}
+.section-intro {
+  margin-bottom: 2.5rem;
+}
+.section-intro h2 {
+  color: #e3c1ff;
+  margin-top: 0;
+}
+.section-intro a {
+  color: #e3c1ff;
+  text-decoration: underline;
+}
+.section-timeline, .section-discography, .section-songs, .section-history {
+  background: #232323ab;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.section-timeline h3, .section-members h3, .section-discography h3, .section-songs h3, .section-history h3 {
+  color: #e3c1ff;
+  margin-top: 0;
+}
+.timeline-list, .members-list, .discography-list, .songs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.timeline-list li, .members-list li, .discography-list li, .songs-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+.timeline-list li:last-child, .members-list li:last-child, .discography-list li:last-child, .songs-list li:last-child {
+  border-bottom: none;
+}
+.members-list strong {
+  color: #e3c1ff;
+}
+.section-discography span {
+  color: #1DB954;
+  font-weight: bold;
+}
+.section-discography a {
+  color: #e3c1ff;
+  text-decoration: underline;
+}
+.section-songs p {
+  margin-top: 1.5rem;
+  color: #ccc;
+}
+.section-history {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+@media (max-width: 900px) {
+  .section-intro, .section-timeline, .section-members, .section-discography, .section-songs, .section-history {
+    padding: 1.2rem 0.7rem;
+  }
+}
+@media (max-width: 600px) {
+  .section-intro, .section-timeline, .section-members, .section-discography, .section-songs, .section-history {
+    padding: 0.7rem 0.2rem;
+    font-size: 0.98rem;
+  }
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+}
