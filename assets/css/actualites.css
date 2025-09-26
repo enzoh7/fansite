@@ -1,116 +1,63 @@
-/* 1) Import de la police Bebas Neue depuis Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html, body {
+  overflow-x: hidden;
+}
+body {
+  background-image: url('../img/667logo.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
 
-/* 2) Conteneur vidéo en relative */
-#player {
-  position: relative;
+body::before {
+  content: "";
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 80vh;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-/* 3) Style de l’iframe existant */
-#player iframe {
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  border: none;
-  margin: 0;
-  padding: 0;
-  transform: scale(1.25) translateY(-10%);
-  transform-origin: center top;
-  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
   pointer-events: none;
 }
-/* 4) Texte en overlay */
+#player {
+  position: relative;
+  width: 100vw;
+  height: 80vh;   /* bannière de 80% de la hauteur */
+  overflow: hidden;
+}
+
+/* L’astuce : forcer un zoom */
+#player iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;       /* largeur forcée (double du conteneur) */
+  height: 200%;      /* hauteur forcée */
+  border: none;
+  transform: translate(-50%, -50%);  /* recentrer */
+  pointer-events: none;
+}
+
+/* Texte overlay */
 .overlay-text {
   position: absolute;
   top: 300px;
-  left: 42%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Bebas Neue', sans-serif;
   font-size: 6vw;
-  line-height: 1.1;
-  text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 2px #ffffff;      /* Contour blanc */
-          text-stroke: 2px #ffffff;
-  text-shadow:
-    0 0 8px rgba(255,255,255,0.6),       /* Lueur blanche */
-    2px 2px 4px rgba(0,0,0,0.6);          /* Ombre portée */
-  pointer-events: none;
-  white-space: pre-wrap;                 /* Garde les retours à la ligne */
+  -webkit-text-stroke: 2px #f1e5fc83;
+  text-shadow: 0 9px 8px rgba(84, 60, 99, 0.39), 2px 2px 4px rgba(0,0,0,0.6);
   text-align: center;
-  width: 100%;                           /* Texte en pleine largeur */
-  z-index: 1;
-}
-.overlay-text {
+  z-index: 2;
   animation: fadeInScale 1s ease-out both;
 }
+
+/* Animation du texte */
 @keyframes fadeInScale {
   from { opacity: 0; transform: scale(0.8) translate(-50%, -50%); }
-  to   { opacity: 1; transform: scale(1)   translate(-50%, -50%); }
-}
-
-.subtitle{
-    text-align: center;
-
-}
-/* Méta-données des articles */
-.article-meta {
-    color: #aaa;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-}
-
-.article-meta strong {
-    color: var(--primary-color);
-}
-
-.article-meta span {
-    color: var(--secondary-color);
-}
-
-
-/* Responsive actualités */
-@media (max-width: 768px) {
-    .form-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .newsletter-input {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    .stats-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .featured-article {
-        padding: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .stats-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .news-tags {
-        justify-content: center;
-    }
-    
-    .archive-card {
-        padding: 1rem;
-    }
+  to   { opacity: 1; transform: scale(1) translate(-50%, -50%); }
 }

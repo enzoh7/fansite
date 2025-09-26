@@ -262,4 +262,8 @@ p{
   h2, h3 {
     font-size: 1.2rem;
   }
+  .ldo {
+    width: 83vw;
+    height: 60vh;
+  }
 }

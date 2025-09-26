@@ -152,7 +152,7 @@ h2 {
     text-align: center;
     font-size: larger;
     font-size: 2rem;
-    color:#5e4175;
+    color:#937ea4;
 }
 
 .grid {
@@ -359,7 +359,7 @@ h2 {
     
     .card {
         padding: 1rem;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     
     h2 {
