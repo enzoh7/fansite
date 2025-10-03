@@ -1,35 +1,13 @@
-body {
-    background-image: url('../img/667logo.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-}
+﻿.album-mobile { display: none; }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: -1;
-    pointer-events: none;
-}
-/* Affichage conditionnel desktop/mobile pour la carte album-hero */
-.album-mobile { display: none; }
 .album-desktop { display: block; }
-@media (max-width: 768px) {
-    .album-mobile { display: block !important; }
-    .album-desktop { display: none !important; }
-}
-/* ==========================================
-   PAGE RÉALISATIONS - STYLES SPÉCIFIQUES
-   ========================================== */
 
-/* Album hero section */
+@media (max-width: 768px) {
+.album-mobile { display: block !important; }
+
+.album-desktop { display: none !important; }
+}
+
 .album-hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
@@ -70,10 +48,6 @@ body::before {
     align-items: center;
 }
 
-.btn-mr {
-    margin-right: 1rem;
-}
-
 .track-meta {
     color: #aaa;
     margin-bottom: 1rem;
@@ -83,7 +57,6 @@ body::before {
 .track-actions {
     margin-top: 1rem;
 }
-
 
 .stat-card-1 {
     background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
@@ -109,14 +82,6 @@ body::before {
     padding: 2rem 1rem;
 }
 
-.stat-card-4 {
-    background: linear-gradient(45deg, #f093fb, #f5576c);
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    padding: 2rem 1rem;
-}
-
 .stat-number {
     color: white;
     font-size: 2.5rem;
@@ -129,77 +94,19 @@ body::before {
     font-size: 1rem;
 }
 
-/* Boutons compacts pour les tableaux */
-.btn-compact {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    min-width: auto;
-}
-
-/* Cartes de singles */
-.single-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.single-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(227, 193, 255, 0.2);
-}
-
-.single-cover {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-/* Badges de streaming */
-.streaming-badges {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-}
-
-.streaming-badge {
-    background: var(--primary-color);
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.streaming-badge:hover {
-    background: var(--secondary-color);
-    transform: translateY(-2px);
-}
-
 .streaming-badge.spotify { background: #1DB954; }
+
 .streaming-badge.youtube { background: #FF0000; }
+
 .streaming-badge.deezer { background: #FF9300; }
-.streaming-badge.apple { background: #FA243C; }
 
-/* Responsive réalisations */
 @media (max-width: 768px) {
-    .album-hero {
-        padding: 2rem;
+    .album-description{
+        display: none;
     }
-    
-    .album-title {
-        font-size: 2rem;
+    .hero h1 {
+        display: none;
     }
-    
-    .streaming-badges {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
     .album-hero {
         padding: 1.5rem;
         flex-direction: column;
@@ -210,6 +117,9 @@ body::before {
     }
     .stat-number {
         font-size: 2rem;
+    }
+    .streaming-badges {
+        justify-content: center;
     }
     .media-container,
     .album-cover,
@@ -229,7 +139,6 @@ body::before {
     }
 }
 
-/* Desktop : images dans les cartes ne dépassent jamais la case, mais gardent leur taille native si possible */
 .media-container img,
 .media-container a img,
 .album-cover {

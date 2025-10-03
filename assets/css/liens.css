@@ -1,13 +1,4 @@
-body {
-    background-image: url('../img/667logo.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-}
-/* Style uniforme pour toutes les cartes */
-.link-card,
+﻿.link-card,
 .platform-card,
 .social-card,
 .community-card,
@@ -51,43 +42,6 @@ body {
     border-color: var(--primary-color);
     box-shadow: 0 10px 30px rgba(227, 193, 255, 0.2);
 }
-.links-hero {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem 0;
-}
-
-.links-hero-title {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.links-hero-subtitle {
-    color: #ccc;
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.links-categories {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-}
-
-.category-btn {
-    padding: 12px 24px;
-    border: 2px solid var(--border-color);
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--text-light);
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 .category-btn:hover,
 .category-btn.active {
@@ -95,66 +49,6 @@ body {
     background: var(--primary-color);
     color: white;
     transform: translateY(-2px);
-}
-
-/* Grille de liens */
-.links-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-/* Cartes de liens */
-.link-card {
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 15px;
-    padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.link-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.link-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(227, 193, 255, 0.2);
-}
-
-.link-card:hover::before {
-    transform: scaleX(1);
-}
-
-/* Header de carte */
-.link-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.link-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    color: white;
 }
 
 .link-icon.spotify {
@@ -173,14 +67,6 @@ body {
     background: #1DA1F2;
 }
 
-.link-icon.facebook {
-    background: #4267B2;
-}
-
-.link-icon.tiktok {
-    background: #000000;
-}
-
 .link-icon.deezer {
     background: #FEAA2D;
 }
@@ -189,267 +75,6 @@ body {
     background: #FA243C;
 }
 
-.link-icon.bandcamp {
-    background: #629aa0;
-}
-
-.link-icon.soundcloud {
-    background: #ff8800;
-}
-
-.link-icon.website {
-    background: var(--primary-color);
-}
-
-.link-icon.press {
-    background: var(--secondary-color);
-}
-
-/* Titre et description */
-.link-title {
-    color: white;
-    font-size: 1.3rem;
-    margin: 0;
-    font-weight: 600;
-}
-
-.link-platform {
-    color: #aaa;
-    font-size: 0.9rem;
-    margin-top: 0.3rem;
-}
-
-.link-description {
-    color: #ccc;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-/* Stats de liens */
-.link-stats {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.link-stat {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: #ccc;
-}
-
-.link-stat strong {
-    color: var(--primary-color);
-}
-
-/* Actions de liens */
-.link-actions {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.link-primary {
-    background: var(--primary-color);
-    color: white;
-    padding: 12px 24px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.link-primary:hover {
-    background: var(--secondary-color);
-    transform: translateY(-2px);
-    color: white;
-}
-
-.link-secondary {
-    border: 2px solid var(--border-color);
-    color: var(--text-light);
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.link-secondary:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-}
-
-/* Section liens officiels */
-.official-links {
-    background: rgba(255, 255, 255, 0.02);
-    padding: 2rem;
-    border-radius: 15px;
-    margin-bottom: 3rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.official-links-title {
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.official-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.official-link {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-}
-
-.official-link:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--primary-color);
-    transform: translateX(5px);
-}
-
-.official-link-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.official-link-text {
-    color: white;
-    font-weight: 500;
-}
-
-.official-link-desc {
-    color: #aaa;
-    font-size: 0.9rem;
-    margin-top: 0.2rem;
-}
-
-/* Section presse */
-.press-section {
-    margin: 3rem 0;
-}
-
-.press-title {
-    color: var(--secondary-color);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.press-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.press-card {
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 10px;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
-
-.press-card:hover {
-    border-color: var(--secondary-color);
-    transform: translateY(-3px);
-}
-
-.press-logo {
-    width: 100%;
-    height: 60px;
-    object-fit: contain;
-    margin-bottom: 1rem;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.press-card:hover .press-logo {
-    filter: grayscale(0%);
-}
-
-.press-outlet {
-    color: white;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.press-article {
-    color: #ccc;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-}
-
-.press-date {
-    color: #aaa;
-    font-size: 0.9rem;
-}
-
-/* QR Codes section */
-.qr-section {
-    background: rgba(255, 255, 255, 0.02);
-    padding: 2rem;
-    border-radius: 15px;
-    margin: 3rem 0;
-    text-align: center;
-}
-
-.qr-title {
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-}
-
-.qr-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-}
-
-.qr-item {
-    padding: 1.5rem;
-    background: white;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.qr-item:hover {
-    transform: scale(1.05);
-}
-
-.qr-code {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 1rem;
-    background: #f0f0f0;
-    border-radius: 5px;
-}
-
-.qr-label {
-    color: var(--dark-bg);
-    font-weight: 600;
-}
-
-/* Responsive liens */
 @media (max-width: 768px) {
     .links-grid {
         grid-template-columns: 1fr;
@@ -487,151 +112,20 @@ body {
         width: 100%;
         text-align: center;
     }
-}
-
-@media (max-width: 480px) {
-    .link-card {
+    
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .platform-card, .community-card, .shop-card {
         padding: 1.5rem;
     }
     
-    .link-header {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .link-icon {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-    
-    .link-stats {
-        justify-content: center;
-    }
-    
-    .official-link {
-        padding: 1rem;
-    }
-    
-    .qr-grid {
-        grid-template-columns: 1fr;
+    .social-card {
+        padding: 1.2rem;
     }
 }
 
-/* Styles pour les cartes de liens sociaux */
-.links-intro {
-    text-align: center;
-    color: #ccc;
-    margin-bottom: 2rem;
-}
-
-.social-card-link {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-}
-
-.social-card-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.social-card-icon {
-    font-size: 3rem;
-}
-
-.social-card-title {
-    color: white;
-    margin-bottom: 0.5rem;
-}
-
-.social-card-handle {
-    color: white;
-    opacity: 0.9;
-}
-
-.social-card-description {
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.social-card-stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-card-followers {
-    color: white;
-    font-weight: bold;
-}
-
-.social-card-activity {
-    color: white;
-}
-
-.share-section {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    text-align: center;
-}
-
-.share-title {
-    color: white;
-}
-
-.share-description {
-    color: white;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.share-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.share-btn {
-    background: rgba(255,255,255,0.2);
-    color: white;
-    border: 1px solid white;
-}
-
-/* Cartes réseaux sociaux spécifiques */
-
-/* Styles pour plateformes musicales */
-
-.music-platform-icon {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-}
-
-.music-platform-title {
-    color: white;
-}
-
-.music-platform-description {
-    color: white;
-    opacity: 0.9;
-    margin: 1rem 0;
-}
-
-.music-platform-stat {
-    color: white;
-    font-weight: bold;
-}
-
-/* Section intro pour plateformes */
-.platforms-intro {
-    text-align: center;
-    color: #ccc;
-    margin-bottom: 2rem;
-}
-
-/* Styles pour les nouvelles sections */
 .section-intro {
     text-align: center;
     color: #ccc;
@@ -639,7 +133,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Cartes plateformes de streaming */
 .platform-card {
     text-align: center;
     transition: all 0.3s ease;
@@ -679,7 +172,6 @@ body {
     margin: 0;
 }
 
-/* Cartes réseaux sociaux améliorées */
 .social-card {
     transition: all 0.3s ease;
     text-decoration: none;
@@ -736,7 +228,6 @@ body {
     font-weight: bold;
 }
 
-/* Cartes communauté */
 .community-card {
     text-align: center;
     transition: all 0.3s ease;
@@ -813,39 +304,24 @@ body {
     transform: translateY(-2px);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .grid-2, .grid-3 {
-        grid-template-columns: 1fr;
-    }
-    
-    .platform-card, .community-card, .shop-card {
-        padding: 1.5rem;
-    }
-    
-    .social-card {
-        padding: 1.2rem;
-    }
-}
-
 @media (max-width: 480px) {
-    .platform-icon, .community-icon, .shop-icon {
+.platform-icon, .community-icon, .shop-icon {
         font-size: 2.5rem;
     }
-    
-    .social-icon {
+
+.social-icon {
         font-size: 1.8rem;
     }
-    
-    .platform-card, .community-card, .shop-card {
+
+.platform-card, .community-card, .shop-card {
         padding: 1rem;
     }
-    
-    .social-card {
+
+.social-card {
         padding: 1rem;
     }
-    
-    .community-stats {
+
+.community-stats {
         flex-direction: column;
         gap: 0.5rem;
     }

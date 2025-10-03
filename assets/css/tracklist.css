@@ -1,47 +1,48 @@
-body {
+﻿body {
             font-size: 16px;
             color: #fff;
             background: var(--dark-bg);
         }
-
-        .product-container {
+h2{
+    border-bottom: 2px solid #560797;
+}
+.product-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             margin-top: -10px;
         }
 
-        .product-header {
+.product-header {
             text-align: center;
             margin-top: -10px;
         }
 
-        .product-header h1 {
+.product-header h1 {
             margin-bottom: 20px;
-            color: var(--secondary-color);
+            color: #937ea4;
             font-size: 2.5rem;
         }
-        .product-cover-section {
+
+.product-cover-section {
             text-align: center;
             margin: 0 0 10px 0;
         }
 
-        .product-cover-image {
+.product-cover-image {
             width: 100%;
             max-width: 450px;
             min-width: 150px;
             border-radius: 8px;
-            box-shadow: 5px 5px 15px rgba(227, 193, 255, 0.3);
             transition: transform 0.3s ease;
             object-fit: cover;
         }
 
-        .product-cover-image:hover {
+.product-cover-image:hover {
             transform: scale(1.02);
-            box-shadow: 10px 10px 20px rgba(227, 193, 255, 0.5);
         }
 
-        .product-type {
+.product-type {
             background-color: var(--secondary-color);
             padding: 5px 15px;
             border-radius: 15px;
@@ -51,33 +52,30 @@ body {
             margin-bottom: 20px;
         }
 
-        .tracklist-section {
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 28px;
+.tracklist-table {
+            background-color: rgba(255, 255, 255, 0.116);
             border-radius: 8px;
             line-height: 1.8;
             border: 1px solid rgba(227, 193, 255, 0.2);
         }
 
-        .tracklist-section h2 {
+.tracklist-section h2 {
             margin-top: 0;
-            color: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-            border-bottom: 2px solid var(--secondary-color);
+            color: linear-gradient(45deg, #937ea4, #560797);
+            border-bottom: 2px solid #560797;
             padding-bottom: 10px;
             text-align: center;
             font-size: 1.8rem;
         }
 
-        .tracklist-table {
+.tracklist-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-            overflow: hidden;
+
         }
 
-        .tracklist-table th {
+.tracklist-table th {
             background: var(--secondary-color);
             color: white;
             padding: 12px;
@@ -85,30 +83,29 @@ body {
             font-weight: bold;
         }
 
-        .tracklist-table td {
+.tracklist-table td {
             font-size: 2vh;
             padding: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             color: #ccc;
         }
 
-        .tracklist-table tr:hover {
+.tracklist-table tr:hover {
             background: rgba(227, 193, 255, 0.1);
         }
 
-        .track-number {
+.track-number {
             font-weight: bold;
             color: var(--primary-color);
             text-align: center;
             width: 50px;
         }
 
-        .track-title {
+.track-title {
             font-weight: bold;
             color: white;
         }
 
-        /* Alignement à droite pour Durée et Producteurs */
         .tracklist-table th:nth-child(3),
         .tracklist-table th:nth-child(4),
         .tracklist-table td:nth-child(3),
@@ -116,50 +113,49 @@ body {
             text-align: right;
         }
 
-        /* Largeurs spécifiques des colonnes */
         .tracklist-table th:nth-child(1),
         .tracklist-table td:nth-child(1) {
-            width: 50px; /* # */
+            width: 50px; 
         }
 
-        .tracklist-table th:nth-child(2),
+.tracklist-table th:nth-child(2),
         .tracklist-table td:nth-child(2) {
-            width: auto; /* Titre - prend l'espace restant */
+            width: auto; 
         }
 
-        .tracklist-table th:nth-child(3),
+.tracklist-table th:nth-child(3),
         .tracklist-table td:nth-child(3) {
-            width: 80px; /* Durée - largeur réduite */
-            padding-right: 20px; /* Espacement de 20px vers la colonne Producteurs */
+            width: 80px; 
+            padding-right: 20px; 
         }
 
-        .tracklist-table th:nth-child(4),
+.tracklist-table th:nth-child(4),
         .tracklist-table td:nth-child(4) {
-            width: 300px; /* Producteurs - largeur fixe */
-            padding-left: 0; /* Pas d'espacement supplémentaire à gauche */
+            width: 300px; 
+            padding-left: 0; 
         }
 
-        .album-info {
-            background-color: rgba(255, 255, 255, 0.05);
+.album-info {
+            background-color: rgba(255, 255, 255, 0.116);
             padding: 20px;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 13px;
             border: 1px solid rgba(227, 193, 255, 0.2);
         }
 
-        .album-info h3 {
-            color: var(--secondary-color);
+.album-info h3 {
+            color: #937ea4;
             margin-bottom: 15px;
             text-align: center;
         }
 
-        .album-info p {
+.album-info p {
             margin: 8px 0;
             font-size: 16px;
             color: #ccc;
         }
 
-        .back-btn {
+.back-btn {
             background: var(--secondary-color);
             color: white;
             padding: 12px 24px;
@@ -173,7 +169,7 @@ body {
             margin-top: 20px;
         }
 
-        .back-btn:hover {
+.back-btn:hover {
             background: var(--secondary-color);
             transform: translateY(-2px);
         }
@@ -187,39 +183,68 @@ body {
             .tracklist-table td {
                 padding: 8px 4px;
             }
+            
+            .product-header h1 {
+                font-size: 2rem;
+            }
         }
 
-        @media (min-width: 800px) {
+        @media (max-width: 480px) {
             .product-container {
-                max-width: 1200px;
+                padding: 15px;
             }
             
-            .product-cover-section {
+            .product-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .tracklist-table {
+                font-size: 12px;
+            }
+            
+            .tracklist-table th,
+            .tracklist-table td {
+                padding: 6px 2px;
+            }
+        }
+
+@media (min-width: 800px) {
+.product-container {
+                max-width: 1200px;
+            }
+
+.product-cover-section {
                 float: left;
                 width: 40%;
                 margin-right: 30px;
                 margin-bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
             }
-            
-            .product-cover-image {
+
+.product-cover-image {
                 max-width: 100%;
                 min-width: 300px;
                 width: 100%;
+                height: auto;
+                min-height: 400px;
+                max-height: 500px;
+                object-fit: cover;
             }
-            
-            .album-info {
+
+.album-info {
                 margin-left: 0;
             }
 
-            .content-right {
+.content-right {
                 overflow: hidden;
             }
-            
-            /* Tracklist en pleine largeur sous les deux autres divs */
-            .tracklist-section {
+
+.tracklist-section {
                 clear: both;
                 width: 100%;
                 margin-top: 30px;
                 margin-left: 0;
             }
-        }
+}
